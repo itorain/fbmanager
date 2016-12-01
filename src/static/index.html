@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FaceBook Page Manager</title>
+    <meta name="description" content="A admin dashboard for managing an fb page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Codeply">
+    <!-- Bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+      <nav class="navbar navbar-fixed-top navbar-dark bg-primary">
+          <button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+              ☰
+          </button>
+          <a class="navbar-brand" href="#">FB Page Manager</a>
+          <div class="collapse navbar-toggleable-xs" id="collapsingNavbar">
+              <ul class="nav navbar-nav pull-right">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="/">Home <span class="sr-only">Home</span></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link active" href="/">Posts</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="#" data-toggle="collapse">DashBoard</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="" data-target="#myModal" data-toggle="modal">Users</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+      <div class="container-fluid" id="main">
+          <div class="row row-offcanvas row-offcanvas-left">
+              <div class="col-md-3 col-lg-2 sidebar-offcanvas" id="sidebar" role="navigation">
+                  <ul class="nav nav-pills nav-stacked">
+                      <li class="nav-item"><a class="nav-link" href="http://localhost:3000/all">All Posts</a></li>
+                      <li class="nav-item"><a class="nav-link" href="http://localhost:3000/">Published</a></li>
+                      <li class="nav-item"><a class="nav-link" href="http://localhost:3000/unpublished">UnPublished</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-9 col-lg-10 main">
+                  <div id="react-root"></div>
+              </div>
+          </div>
+      </div>
+    <footer class="container-fluid">
+        <p class="text-right small">@ZayLabs <a href="http://dev.zaylabs.me/">Isaiah Torain</a></p>
+    </footer>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script src="/js/scripts.js"></script>
+    <script src="/js/bundle.js"></script>
+  </body>
+</html>
